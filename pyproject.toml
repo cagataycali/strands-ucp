@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strands-ucp"
+dynamic = ["version"]
+description = "Universal Commerce Protocol (UCP) tools for Strands Agents. Enable agentic commerce with discovery, checkout, orders, and payment handling."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "strands-agents",
+    "httpx>=0.24.0"
+]
+authors = [
+    {name = "Cagatay Cali", email = "cagataycali@gmail.com"}
+]
+keywords = ["strands", "agents", "strands-agents", "ucp", "commerce", "shopping", "checkout", "payments", "ecommerce"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/cagataycali/strands-ucp"
+Repository = "https://github.com/cagataycali/strands-ucp"
+Documentation = "https://ucp.dev"
+"Bug Tracker" = "https://github.com/cagataycali/strands-ucp/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["strands_ucp*"]
+exclude = ["examples*", "tests*", "*.tests*"]
+
+[tool.setuptools_scm]
+write_to = "strands_ucp/_version.py"
