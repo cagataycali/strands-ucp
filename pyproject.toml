@@ -13,7 +13,7 @@ dependencies = [
     "httpx>=0.24.0"
 ]
 authors = [
-    {name = "Cagatay Cali", email = "cagataycali@gmail.com"}
+    {name = "Cagatay Cali", email = "cagataycali@icloud.com"}
 ]
 keywords = ["strands", "agents", "strands-agents", "ucp", "commerce", "shopping", "checkout", "payments", "ecommerce"]
 classifiers = [
